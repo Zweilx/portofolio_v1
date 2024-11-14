@@ -1,82 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gastin Gabriel</title>
-  <link href="./output.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/7d3bb307a9.js" crossorigin="anonymous"></script>
-</head>
-<body class="flex flex-col bg-white">
-    <header class="flex justify-center">
-        <section class="flex justify-center items-center shadow-slate-600 shadow-md bg-slate-500 px-6 py-3 my-6 gap-3 fixed rounded-3xl">
-            <nav class="flex flex-row gap-3 text-lg">
-                <a class="text-white" href="#menu">Home</a>
-                <a class="text-white" href="#cards2">About Me</a>
-                <a class="text-white" href="#experience">Experience</a>
-                <a class="text-white" href="#education">Education</a>
-            </nav>
-        </section>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gastin Gabriel</title>
+    <link href="./output.css" rel="stylesheet" />
 
-    <section id="menu" class=" my-12 mx-5">
-        <div class="mx-5 my-5 shadow-md shadow-slate-600 bg-slate-700 px-3 py-4 flex justify-center items-center rounded-full absolute">
-            <div class="flex flex-col justify-center items-center gap-6">
-                <a href="https://github.com/Zweilx" class="text-white" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-                <a href="https://www.linkedin.com/in/gastin-gabriel-703226232/" class="text-white" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                <a href="https://www.instagram.com/u.q.zen_/" class="text-white" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                <a href="https://wa.me/62208977322147" class="text-white" target="_blank"><i class="fa-regular fa-message fa-xl"></i></a>
-            </div>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body class="flex flex-col bg-white">
+
+    <!-- Header -->
+     <header class="fixed inset-0 z-[99999]  flex justify-center py-4">
+      <div class="flex gap-5 px-8 py-3 rounded-full backdrop-blur-lg bg-white/50 h-fit">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <a href="#profile">Profile</a>
+      </div>
+     </header>
+
+    <!-- Hero -->
+    <section
+      class="min-h-screen flex items-center justify-between px-28 gap-10"
+      id="home"
+    >
+      <div class="flex-1">
+        <div class="flex items-center mb-4">
+          <img src="assets/star.svg" alt="" />
+          <div class="w-16 h-[1px] bg-black mx-2"></div>
+          <span class="">Welcome to my portfolio</span>
         </div>
+        <h1 class="text-[86px] leading-[1.1] mb-4">
+          Hi There... <br />
+          <span class="font-medium">
+            Gastin <span class="text-text-100">Gabriel</span>
+          </span>
+        </h1>
+        <p class="w-[82%] text-lg">
+          “Hello, My name is Gastin Gabriel Junior Damar Bumi, I am a student
+          that have an interest in programming”
+        </p>
+      </div>
+
+      <div class="flex-1">
+        <img src="assets/IMG_1410 1.jpg" alt="" class="w-full" />
+      </div>
     </section>
 
-    <main class="flex flex-col gap-28 items-center justify-center my-14">
-        <section id="cards" class="flex flex-row justify-between gap-3">
-            <div class="bg-slate-500 rounded-lg px-1 py-1 shadow-md shadow-slate-700 min-h-full min-w-72">
-                <img src="" class="" width="375px" height="450px" alt="">
-            </div>
-            <div class="flex justify-start flex-col gap-4">
-                <div class="bg-grein_prima-50 rounded-lg px-1 py-1 shadow-md shadow-slate-700 max-w-96 min-w-80 min-h-60 max-h-64">
-                    <h1 class="my-1">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum sequi, accusantium aliquid at ratione tempore cum veritatis voluptate doloremque atque quaerat sapiente numquam earum eum dolor ipsum deserunt quis.</p>
-                </div>
-                <div class="bg-slate-500 rounded-lg px-1 py-1 shadow-md shadow-slate-700 max-w-96 min-w-80 min-h-60 max-h-64">
-                    <h1 class="my-1">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum sequi, accusantium aliquid at ratione tempore cum veritatis voluptate doloremque atque quaerat sapiente numquam earum eum dolor ipsum deserunt quis.</p>
-                </div>
-            </div>
-        </section>
+    <!-- About -->
+    <section class="px-28 py-24 flex justify-between gap-10" id="about">
+      <div class="flex-1">
+        <div class="flex items-center mb-4">
+          <img src="assets/star.svg" alt="" />
+          <div class="w-16 h-[1px] bg-black mx-2"></div>
+          <span class="">About</span>
+        </div>
+        <h1 class="text-6xl mb-6"><span class="text-text-100 font-medium">Know</span> me more</h1>
+        <div class="flex gap-4">
+          <a href="#" class="flex text-xl p-2  border rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-github'></i></a>
+          <a href="#" class="flex text-xl p-2  border rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-whatsapp' ></i></a>
+          <a href="#" class="flex text-xl p-2  border rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-linkedin' ></i></a>
+          <a href="#" class="flex text-xl p-2  border rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-instagram' ></i></a>
+        </div>
+      </div>
+      <div class="flex-1 flex flex-col gap-6 text-lg text-justify">
+        <p>
+          Hello, my name is Gastin Gabriel Junior Damar Bumi. I'm currently a student at the Vocational 
+          School TI Bali Global Denpasar, where I’m developing my interest in programming and technology. 
+          I'm eager to expand my knowledge in these areas, especially in web development and back-end technologies.
+        </p>
+        <p>
+          Right now, I'm learning the basics of HTML along with CSS, JavaScript, and other foundational web technologies. 
+          I hope to deepen my understanding in the future, with a particular focus on back-end development. 
+          Three years ago, I studied at Timedoor Teens Academy, where I progressed through the AI phase until 
+          I graduated in mid-2023. During that time, I gained some experience with basic programming in JavaScript, 
+          HTML, CSS, Python. Additionally, I have experience in IoT and robotics projects. 
+          I’ve worked on several IoT project schematics and handled programming as part of my school activities.
+           I look forward to building on these skills as I continue my studies and projects.
+        </p>
+      </div>
+    </section>
 
-        <section id="cards2" class="flex flex-row justify-between gap-3">
-            <div class="flex justify-start flex-col gap-4">
-                <div class="bg-grein_prima-50 rounded-lg px-1 py-1 shadow-md shadow-slate-700 max-w-96 min-w-80 min-h-56 max-h-60">
-                    <h1 class="my-1">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum sequi, accusantium aliquid at ratione tempore cum veritatis voluptate doloremque atque quaerat sapiente numquam earum eum dolor ipsum deserunt quis.</p>
-                </div>
-                <div class="bg-slate-500 rounded-lg px-1 py-1 shadow-md shadow-slate-700 max-w-96 min-w-80 min-h-56 max-h-60">
-                    <h1 class="my-1">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum sequi, accusantium aliquid at ratione tempore cum veritatis voluptate doloremque atque quaerat sapiente numquam earum eum dolor ipsum deserunt quis.</p>
-                </div>
-            </div>
+    <!-- Skill -->
+    <section class="flex justify-between px-28 py-24 gap-10" id="skills">
+      <div class="flex-1">
+        <div class="flex items-center mb-4">
+          <img src="assets/star.svg" alt="" />
+          <div class="w-16 h-[1px] bg-black mx-2"></div>
+          <span class="">Skills</span>
+        </div>
+        <h1 class="text-6xl mb-6"><span class="text-text-100 font-medium">Skills</span> & Knowledge</h1>
+        <p class="w-[82%] text-lg">Explore My Current Learning Journey and a Comprehensive Overview of My Full Skill Set</p>
+      </div>
+      <div class="flex-1">
+        <details id="details1" open class="cursor-pointer list-none group open:bg-black open:text-white border-b py-6 px-6 transition-all duration-500 open:min-h-fit ">
+          <summary  class="list-none text-4xl font-medium group-open:pb-4">Web Development</summary>
+          <p class="text-base  font-light">Explore My Current Learning Journey and a Comprehensive Overview of My Full Skill Set</p>
+        </details>
+        <details id="details2" class="cursor-pointer list-none group open:bg-black open:text-white border-b py-6 px-6 transition-all duration-500 open:min-h-fit ">
+          <summary class="list-none text-4xl font-medium group-open:pb-4">Web Development</summary>
+          <p class="text-base  font-light">Explore My Current Learning Journey and a Comprehensive Overview of My Full Skill Set</p>
+        </details>
+        <details id="details3" class="cursor-pointer list-none group open:bg-black open:text-white border-b py-6 px-6 transition-all duration-500 open:min-h-fit ">
+          <summary class="list-none text-4xl font-medium group-open:pb-4">Web Development</summary>
+          <p class="text-base  font-light">Explore My Current Learning Journey and a Comprehensive Overview of My Full Skill Set</p>
+        </details>
+        <details id="details4" class="cursor-pointer list-none group open:bg-black open:text-white border-b py-6 px-6 transition-all duration-500 open:min-h-fit ">
+          <summary class="list-none text-4xl font-medium group-open:pb-4">Web Development</summary>
+          <p class="text-base  font-light">Explore My Current Learning Journey and a Comprehensive Overview of My Full Skill Set</p>
+        </details>
+      </div>
+    </section>
 
-            <div class="flex justify-center flex-col gap-4">
-                <div class="bg-slate-500 rounded-lg px-1 py-1 shadow-md shadow-slate-700 max-w-96 min-w-80 min-h-72 max-h-80">
-                    <h1 class="my-1">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum sequi, accusantium aliquid at ratione tempore cum veritatis voluptate doloremque atque quaerat sapiente numquam earum eum dolor ipsum deserunt quis.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Work -->
+     <section id="work" class="flex flex-col items-center px-28 py-24 w-full " id="works">
+      <h1 class="mb-16 text-6xl font-medium">My <span class="text-text-100">Works</span></h1>
+      <div class="grid grid-cols-2 gap-8">
+        <a href="" class="w-full">
+          <img src="https://i.pinimg.com/736x/b9/34/15/b934157e07c42e38c1546f8cbf2f3fdd.jpg" alt="" class="w-full filter grayscale hover:grayscale-0 transition-[filter] duration-300" >
+        </a>
+        <a href="" class="w-full">
+          <img src="https://i.pinimg.com/736x/b9/34/15/b934157e07c42e38c1546f8cbf2f3fdd.jpg" alt="" class="w-full filter grayscale hover:grayscale-0 transition-[filter] duration-300" >
+        </a>
+        <a href="" class="w-full">
+          <img src="https://i.pinimg.com/736x/b9/34/15/b934157e07c42e38c1546f8cbf2f3fdd.jpg" alt="" class="w-full filter grayscale hover:grayscale-0 transition-[filter] duration-300" >
+        </a>
+        <a href="" class="w-full">
+          <img src="https://i.pinimg.com/736x/b9/34/15/b934157e07c42e38c1546f8cbf2f3fdd.jpg" alt="" class="w-full filter grayscale hover:grayscale-0 transition-[filter] duration-300" >
+        </a>
+      </div>
+     </section>
 
-        <section class="flex justify-center">
-            <div class="px-2 py-3 bg-zinc-100 min-h-40 ">
-                <h1>Test</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, et, veritatis deleniti facere ullam tempore nobis praesentium omnis rem ducimus inventore quam hic enim fugiat ut id adipisci deserunt ex!
-                </p>
-            </div>
-        </section>
-    </main>
+     <footer class="py-24 bg-text-300 text-white flex flex-col items-center mt-28" id="profile">
+      <div class="text-center mb-12">
+        <h1 class="text-6xl font-medium mb-4">Have a <span class="text-text-100">question?</span> Don’t hesitate to ask</h1>
+        <p class="text-xl">You can find me on</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="#" class="flex text-2xl p-2  border border-neutral-50/10 rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-github'></i></a>
+        <a href="#" class="flex text-2xl p-2  border border-neutral-50/10 rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-whatsapp' ></i></a>
+        <a href="#" class="flex text-2xl p-2  border border-neutral-50/10 rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-linkedin' ></i></a>
+        <a href="#" class="flex text-2xl p-2  border border-neutral-50/10 rounded-full hover:text-white hover:bg-text-300 transition duration-300"><i class='bx bxl-instagram' ></i></a>
+      </div>
+     </footer>
 
-    <footer></footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
