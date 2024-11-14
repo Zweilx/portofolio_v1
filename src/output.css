@@ -8640,6 +8640,18 @@ video {
   inset:0px
 }
 
+.left-0{
+  left:0px
+}
+
+.top-0{
+  top:0px
+}
+
+.right-0{
+  right:0px
+}
+
 .z-\[99999\]{
   z-index:99999
 }
