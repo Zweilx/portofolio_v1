@@ -5,22 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/7d3bb307a9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
+    <script src="/src/script.js"></script>
+    
 </head>
-<body>
-    <header class="flex justify-center ">
-        
-            <nav class="flex flex-row gap-6 text-text_hitam bg-putih-20 fixed px-6 py-3 rounded-xl mt-3">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Works</a>
-                <a href="">profile</a>
-            </nav>
-       
-
+<body >
+    <header id="Home" class="flex justify-center animate-[fadeSlideDown_0.8s_ease-in-out]">
+        <nav class="flex flex-row gap-6 text-text_hitam bg-putih-20 fixed px-6 py-3 backdrop-blur-md rounded-xl mt-5 transition-all duration-300 ease-in-out hover:bg-gray-200">
+            <a href="#Home" class="transition-all duration-300 ease-in-out hover:text-gray-500">Home</a>
+            <a href="#About" class="transition-all duration-300 ease-in-out hover:text-gray-500">About</a>
+            <a href="#Skills" class="transition-all duration-300 ease-in-out hover:text-gray-500">Skills</a>
+            <a href="#Works" class="transition-all duration-300 ease-in-out hover:text-gray-500">Works</a>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="flex flex-col justify-items-start mt-40 items-center py-2 px-1 h-screen gap-40">
+        <!-- Hero Section -->
+        <section class="flex gap-16 animate-[fadeInLeft_1s_ease-in-out]">
+            <div class="flex text-left justify-center gap-6 flex-col">
+                <h1 class="text-6xl">Hi There... <br> <span>Gastin <span class="text-abu">Gabriel</span></span></h1>
+                <p class="text-wrap text-justify w-custom">
+                    Hello, my name is Gastin Gabriel Junior Damar Bumi. I'm currently a student at the Vocational School TI Bali Global Denpasar, where I’m developing my interest in programming and technology. I'm eager to expand my knowledge in these areas, especially in web development.
+                </p>
+            </div>
+            <div>
+                <img src="/src/assets/pictures/gastin-removebg-preview.png" height="400px" width="564px" alt="" class="transition-transform duration-300 hover:scale-105">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <div id="About"></div>
+        <section class="flex gap-72 flex-row-reverse animate-[fadeIn_1.2s_ease-in-out]">
+            <div class="flex text-left justify-center gap-6 flex-col">
+                <h1 class="text-6xl text-right"><span class="text-abu">Know</span> Me <br> Further</h1>
+                <nav class="flex flex-row gap-1 justify-evenly">
+                    <a href="https://github.com/Zweilx" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-brands fa-github fa-lg"></i></a>
+                    <a href="https://www.instagram.com/u.q.zen_/" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-brands fa-instagram fa-lg"></i> </a>
+                    <a href="https://www.linkedin.com/in/gastin-gabriel-703226232/" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href="https://wa.me/628977322147" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-regular fa-message fa-lg"></i></a>
+                </nav>
+            </div>
+            <div class="w-custom">
+                <p class="text-justify">
+                    Right now, I'm learning the basics of HTML along with CSS, JavaScript, and other foundational web technologies. I hope to deepen my understanding in the future, with a particular focus on back-end development.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <div id="Skills"></div>
+        <section class="flex flex-row justify-between px-3 py-2 gap-72 animate-[slideUp_1.2s_ease-in-out]">
+            <div class="flex text-left justify-center gap-6 flex-col">
+                <h1 class="text-6xl"><span class="text-gray-400">Skills</span> & Knowledge</h1>
+                <p id="content-output" class="w-custom text-wrap">This is content for Card 1</p>
+            </div>
+            <div class="flex flex-col justify-end">
+                <!-- Cards with hover animation -->
+                <div onclick="updateContent('I learn it since i was in 8th grade with Timedoor Academy Online, I’ve been tought about the basics of website development from them, and i completed a few projects from them. Im still learning about website development,like using framework and git function', this)" class="card bg-black text-white px-24 py-8 transition-all duration-300 cursor-pointer hover:scale-105 hover:bg-gray-700">
+                    <p>Website <br> Development</p>
+                </div>
+                <div onclick="updateContent('I have an experience developing game using Phaser JavaScript Framework, i  have made simple 2d shooter game, i designed it by myself, all of the assets', this)" class="card bg-white text-black px-24 py-6 transition-all duration-300 cursor-pointer hover:scale-105 hover:bg-gray-200">
+                    <p>Game <br> Development</p>
+                </div>
+                <div onclick="updateContent('In my school, i learn about robotics using ESP32, i have made a few projects out of it, like algae autofarm system, smarthome system, and will still going. i use Blynk API as data monitoring and executing an action', this)" class="card bg-white text-black px-24 py-6 transition-all duration-300 cursor-pointer hover:scale-105 hover:bg-gray-200">
+                    <p>Robotic <br> Using Arduino</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <div id="Works"></div>
+        <section class="flex flex-col items-center gap-9">
+            <h1 class="text-6xl">My<span class="text-gray-400"> Works</span></h1>
+            <div class="flex flex-wrap justify-center gap-14">
+                <img width="487px" src="/src/assets/pictures/project1.png" class="transition-transform duration-300 hover:scale-105" alt="">
+                <img width="487px" src="/src/assets/pictures/project2.png" class="transition-transform duration-300 hover:scale-105" alt="">
+                <img width="487px" src="/src/assets/pictures/project3.png" class="transition-transform duration-300 hover:scale-105" alt="">
+            </div>
+        </section>  
+
+        <!-- Footer -->
+        <section class="bg-black text-white py-8 w-full animate-[slideUp_1.5s_ease-in-out]">
+            <div class="flex flex-col items-center gap-4">
+                <h1 class="text-3xl font-semibold">Have a <span class="text-gray-300">question?</span> Don’t hesitate to ask</h1>
+                <h6 class="text-lg text-gray-400">You can find me on</h6>
+                <nav class="flex flex-row gap-6 text-2xl">
+                    <a href="https://github.com/Zweilx" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/u.q.zen_/" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gastin-gabriel-703226232/" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/628977322147" target="_blank" class="transition-all duration-300 ease-in-out hover:text-gray-500"><i class="fa-regular fa-message"></i></a>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+        
+  
+    
 </body>
 </html>
